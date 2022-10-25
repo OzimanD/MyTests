@@ -1,6 +1,8 @@
 package tests_header;
 
+import XpathSelectors.Methods;
 import XpathSelectors.XpathMainPage;
+import XpathSelectors.XpathRoadMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -13,15 +15,21 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestAboutBitbon {
-    //C236411
-    //Нажатие на выбранный пункт меню -> открытие соответствующего раздела
+public class TestChangeLogoRoadMap {
+    //C257299
+    //Нажатие на "иконку вызова карты сайта" -> плавно меняется с точек на крестик + блок с картой сайта плавно выезжает вниз
+    static Methods methods = new Methods();
+
     private static WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
     public void setUpDriver() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
+
+    }
+
+    public static void Connect(){
         try {
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
@@ -33,17 +41,17 @@ public class TestAboutBitbon {
     @Test(description = "Tests of Header")
     public static void MethodClickLogoT620561() throws InterruptedException {
 
-        XpathMainPage xpath = new XpathMainPage();
-
-        WebElement element = driver.findElement(By.xpath(xpath.HeaderAboutBitbon));
+        XpathMainPage xpathMainPage = new XpathMainPage();
+        Connect();
+        WebElement element = driver.findElement(By.xpath(xpathMainPage.HeadetRoadMap));
+//        System.out.println(element.getAttribute("class"));
         element.click();
-        String s1 = "http://stg.bitbon.space/ru/bitbon-system";
-        Thread.sleep(1500);
-        String s = driver.getCurrentUrl();
-        if(s.equals(s1)) {
-            System.out.println("Pass Test C236411 ");
+        WebElement element1 = driver.findElement(By.xpath(xpathMainPage.HeadetRoadMap));
+//        System.out.println(element1.getAttribute("class"));
+        if(element1.getAttribute("class").equals("icon-sitemap active")) {
+            System.out.println("Pass Test C257299 ");
         }else{
-            System.out.println("Fail Test C236411"+ s);
+            System.out.println("Fail Test C257299");
         }
     }
 

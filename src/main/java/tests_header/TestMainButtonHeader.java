@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestMainButtonHeader {
 
     //C236411
@@ -18,15 +20,18 @@ public class TestMainButtonHeader {
     public void setUpDriver() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
+        try {
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+            driver.get("http://stg.bitbon.space/ru");
+        } catch (Exception e) {
+        }
     }
 
     @Test(description = "Tests of Header")
     public static void MethodClickLogoT620561() throws InterruptedException {
 
         XpathMainPage xpath = new XpathMainPage();
-        driver.get("http://stg.bitbon.space/ru");
-        driver.manage().window().setSize(new Dimension(1920, 1080));
-
         WebElement element = driver.findElement(By.xpath(xpath.HeaderMainB));
         element.click();
         String s1 = "http://stg.bitbon.space/ru";

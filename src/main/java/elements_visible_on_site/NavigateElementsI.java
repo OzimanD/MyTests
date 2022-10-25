@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import javax.swing.*;
+import java.util.concurrent.TimeUnit;
 
 //C257414
 //Наведении/нажатие курсора на элемент "i" -> вызов всплывающего окна с соответствующим контентом
@@ -21,15 +22,18 @@ public class NavigateElementsI {
     public void setUpDriver() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
+        try {
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+            driver.get("http://stg.bitbon.space/ru/cooperation/bitup-agency");
+        } catch (Exception e) {
+        }
     }
 
     @Test(description = "Tests Elements visible")
     public static void MethodClickLogoT620561() throws InterruptedException {
 
         XpathMainPage xpath = new XpathMainPage();
-        driver.get("http://stg.bitbon.space/ru/cooperation/bitup-agency");
-        driver.manage().window().setSize(new Dimension(1920, 1080));
-
         try {
             WebElement element = driver.findElement(By.xpath(xpath.ElementsI));
             Actions actions = new Actions(driver);

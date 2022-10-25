@@ -1,7 +1,9 @@
 package tests_header;
 
 import XpathSelectors.XpathMainPage;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
@@ -10,9 +12,8 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-
-public class TestsOfHeaderEnableAfterScrollT620562 {
-
+public class TestRegistration {
+    //C257301	Нажатие на "иконку входа/регистрации" -> перейти на страницу вход/регистрация
     private static WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
@@ -29,30 +30,22 @@ public class TestsOfHeaderEnableAfterScrollT620562 {
         } catch (Exception e) {
         }
     }
-
     @Test(description = "Tests of Header")
-    public static void MethodScrollAndEnableHeaderT620561() throws InterruptedException {
+    public static void MethodClickLogoT620561() throws InterruptedException {
 
-            XpathMainPage xpath = new XpathMainPage();
-            Connect();
-
-            try {
-                ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-                WebElement element = driver.findElement(By.xpath(xpath.HeaderLogo));
-                element.click();
-                String s1 = "http://stg.bitbon.space/ru";
-                Thread.sleep(1500);
-                String s = driver.getCurrentUrl();
-                if(s.equals(s1)) {
-                    System.out.println("Pass Test T620562");
-                }else{
-                    System.out.println("Fail test T620562");
-                }
-            }catch (Exception e){
-            }
-
+        XpathMainPage xpath = new XpathMainPage();
+        Connect();
+        WebElement element = driver.findElement(By.xpath(xpath.HeaderRegistration));
+        element.click();
+        String s1 = "http://stg.bitbon.space/ru/log-in";
+        Thread.sleep(1500);
+        String s = driver.getCurrentUrl();
+        if(s.equals(s1)) {
+            System.out.println("Pass Test C257301 ");
+        }else{
+            System.out.println("Fail Test C257301"+ s);
+        }
     }
-
 
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {

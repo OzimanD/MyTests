@@ -5,8 +5,20 @@
 <suite name="All Test Suite">
     <test name="Test1">
         <classes>
-            <class name="tests_header.TestsOfHeaderEnableAfterScrollT620562"></class>
             <class name="tests_header.ClickLogoT620561"></class>
+<!--            <class name="tests_header.LoggerM"></class>-->
+            <class name="tests_header.TestAboutBitbon"></class>
+            <class name="tests_header.TestAuditAndStatistics"></class>
+            <class name="tests_header.TestChangeLogoRoadMap"></class>
+            <class name="tests_header.TestMainButtonHeader"></class>
+            <class name="tests_header.TestNewsButtonHeader"></class>
+            <class name="tests_header.TestProvaiding"></class>
+            <class name="tests_header.TestRegistration"></class>
+            <class name="tests_header.TestsLinksRoadMap"></class>
+            <class name="tests_header.TestsOfHeaderEnableAfterScrollT620562"></class>
+            <class name="tests_header.TestСooperation"></class>
+
+
         </classes>
     </test>
 </suite>

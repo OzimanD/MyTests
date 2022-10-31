@@ -39,7 +39,7 @@ public class TestChangeLogoRoadMap {
     }
 
     @Test(description = "Tests of Header")
-    public static void MethodClickLogoT620561() throws InterruptedException {
+    public static void Check() throws InterruptedException {
 
         XpathMainPage xpathMainPage = new XpathMainPage();
         Connect();

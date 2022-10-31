@@ -32,7 +32,7 @@ public class DesignFuter {
         }
     }
     @Test(description = "Tests of Futter")
-    public static void MethodClickLogoT620561() throws InterruptedException {
+    public static void Check() throws InterruptedException {
         XpathMainPage xpath = new XpathMainPage();
         Connect();
         Thread.sleep(500);

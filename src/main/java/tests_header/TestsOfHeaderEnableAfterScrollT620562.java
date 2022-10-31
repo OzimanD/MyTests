@@ -31,7 +31,7 @@ public class TestsOfHeaderEnableAfterScrollT620562 {
     }
 
     @Test(description = "Tests of Header")
-    public static void MethodScrollAndEnableHeaderT620561() throws InterruptedException {
+    public static void Check() throws InterruptedException {
 
             XpathMainPage xpath = new XpathMainPage();
             Connect();

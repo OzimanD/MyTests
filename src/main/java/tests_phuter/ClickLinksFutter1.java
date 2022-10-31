@@ -1,8 +1,8 @@
-package tests_header;
+package tests_phuter;
 
-import XpathSelectors.XpathMainPage;
+import XpathSelectors.XpathFutter;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,9 +13,10 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestProvaiding {
-    //C236411
-    //Нажатие на выбранный пункт меню -> открытие соответствующего раздела
+public class ClickLinksFutter1 {
+    //	C236419	Каждая категория -> список статей-гиперссылок
+    //  C236420	Нажатие на гиперссылку -> переход к отображению статьи в основной рабочей области
+
     private static WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
@@ -32,23 +33,26 @@ public class TestProvaiding {
         } catch (Exception e) {
         }
     }
-
-    @Test(description = "Tests of Header")
+    @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-
-        XpathMainPage xpath = new XpathMainPage();
+        XpathFutter xpathFutter = new XpathFutter();
         Connect();
+        Thread.sleep(500);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,5000)");
+        Thread.sleep(500);
 
-        WebElement element = driver.findElement(By.xpath(xpath.HeaderProviding));
-        element.click();
-        String s1 = "http://stg.bitbon.space/ru/providing";
-        Thread.sleep(1500);
+        WebElement element1 = driver.findElement(By.xpath(xpathFutter.FutterContacts));
+        element1.click();
+        Thread.sleep(500);
+        String Link1 = driver.getCurrentUrl();
+        String s1 = "http://stg.bitbon.space/ru/bitbon-system-public-contract";
         String s = driver.getCurrentUrl();
-        if(s.equals(s1)) {
-            System.out.println("Pass Test C236411 ");
+        if(Link1.equals(s1)) {
+            System.out.println("Pass Test C236420 ");
         }else{
-            System.out.println("Fail Test C236411"+ s);
+            System.out.println("Fail Test C236420"+ s);
         }
+
     }
 
     @AfterMethod(alwaysRun = true)

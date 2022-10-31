@@ -29,7 +29,7 @@ public class ClickLogoT620561 {
     }
 
     @Test(description = "Tests of Header")
-    public static void MethodClickLogoT620561() throws InterruptedException {
+    public static void Check() throws InterruptedException {
 
         XpathMainPage xpath = new XpathMainPage();
 

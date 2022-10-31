@@ -39,7 +39,7 @@ public class TestsLinksRoadMap {
         }
 
         @Test(description = "Tests of Header")
-        public static void MethodClickLogoT620561() throws InterruptedException {
+        public static void Check() throws InterruptedException {
 
             XpathRoadMap xpathRoadMap = new XpathRoadMap();
             Connect();

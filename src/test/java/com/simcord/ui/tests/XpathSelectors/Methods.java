@@ -41,6 +41,20 @@ public class Methods {
 
     }
 
+    public static void WaitLoadPage() throws InterruptedException {
+        Thread.sleep(1000);
+    }
+
+    public static void back() {
+        driver.navigate().back();
+    }
+
+    public static void ClickIconMapSites() throws InterruptedException {
+        WebElement element = driver.findElement(By.xpath(XpathRoadMap.RoadMapButton));
+        element.click();
+        Thread.sleep(1000);
+    }
+
     @AfterClass(alwaysRun = true)
     public void closeBrowser() {
         driver.quit();

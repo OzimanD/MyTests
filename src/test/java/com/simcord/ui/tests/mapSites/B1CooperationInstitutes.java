@@ -7,31 +7,33 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.Business;
+import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.Institutes;
+import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.Lawyers;
 
-public class B1CooperationBusiness extends Methods {
+public class B1CooperationInstitutes extends Methods {
     //C236432	Нажатие на каждую гиперссылку -> отображение статьи в основной рабочей области страницы
     public static String GetLink;
 
-    public static String CooperationBusiness() throws InterruptedException {
+    public static String Institutes() throws InterruptedException {
         ClickIconMapSites();
-        WebElement element2 = driver.findElement(By.xpath(XpathRoadMap.RoadMapCooperationBusiness));
+        WebElement element2 = driver.findElement(By.xpath(XpathRoadMap.RoadMapCooperationInstitutes));
         element2.click();
         WaitLoadPage();
-        waitUntil(XpathRoadMap.RoadMapCooperationBusinessME);
+        waitUntil(XpathRoadMap.RoadMapCooperationInstitutesME);
         return GetLink;
     }
 
     public static void Result() throws InterruptedException {
         String GetLink = driver.getCurrentUrl();
 //        System.out.println(GetLink);
-//        System.out.println(Business);
-        Assert.assertEquals(GetLink, Business, "Pass Test C236432");
+//        System.out.println(Developers);
+        Assert.assertEquals(GetLink, Institutes, "Pass Test C236432");
     }
+
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        CooperationBusiness();
+        Institutes();
         Result();
 
     }

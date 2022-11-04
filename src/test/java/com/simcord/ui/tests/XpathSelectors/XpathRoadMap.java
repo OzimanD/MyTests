@@ -9,33 +9,35 @@ public class XpathRoadMap {
     public static final String RoadMapCooperationBusiness = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[1]/a";
     public static final String RoadMapCooperationBusinessME = "/html/body/div/div[1]/main/div/div/section[1]/div/div/h1";
 
-    public static final String RoadMapCooperationBitupAgency = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[2]/a";
-    public static final String RoadMapCooperationBitupAgencyME = "/html/body/div[1]/div[1]/main/div/div/section[1]/div/div/h1";
-    public static final String RoadMapCooperationOperators = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[3]/a";
+    public static final String RoadMapCooperationBitUpAgent = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[2]/a";
+    public static final String RoadMapCooperationBitUpAgentME = "/html/body/div[1]/div[1]/main/div/div/section[1]/div/div/h1";
+    public static final String RoadMapCooperationOperators = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[3]/a";
     public static final String RoadMapCooperationOperatorsME = "/html/body/div[1]/div[1]/main/div/div/section[1]/div/div/h1";
-    public static final String RoadMapCooperationDevelopers = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[4]/a";
+    public static final String RoadMapCooperationDevelopers = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[4]/a";
     public static final String RoadMapCooperationDevelopersME = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[4]/a";
-    public static final String RoadMapCooperationExchanges = "/html/body/div[1]/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[5]/a";
+    public static final String RoadMapCooperationExchanges = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[5]/a";
     public static final String RoadMapCooperationExchangesME = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[5]/a";
-    public static final String RoadMapCooperationLawyers = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[6]/a";
+    public static final String RoadMapCooperationLawyers = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[6]/a";
     public static final String RoadMapCooperationLawyersME = "/html/body/div[1]/div[1]/main/div/div/section[1]/div/div/h1";
-    public static final String RoadMapCooperationInstitutes = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[7]/a";
+    public static final String RoadMapCooperationInstitutes = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[7]/a";
     public static final String RoadMapCooperationInstitutesME = "//*[@id=\"__next\"]/div[1]/main/div/div/section[1]/div/div/h1";
-    public static final String RoadMapCooperationForums = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[8]/a";
+    public static final String RoadMapCooperationForums = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[8]/a";
     public static final String RoadMapCooperationForumsME = "/html/body/div[1]/div[1]/main/div/div/section[1]/div/h1";
-    public static final String RoadMapCooperationStates = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[9]/a";
+    public static final String RoadMapCooperationStates = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[1]/ul/li[9]/a";
     public static final String RoadMapCooperationStatesME = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[1]/ul/li[9]/a";
 
-    public static final String RoadMapGenInfBlockchain = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[2]/ul/li[1]/a";
-    public static final String RoadMapGenInfDigitalAsset = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[1]/div[2]/ul/li[2]/a";
+    public static final String RoadMapGenInfBlockchain = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[2]/ul/li[1]/a";
+    public static final String RoadMapGenInfBlockchainME = "/html/body/div/div[1]/main/div/div/div/h1";
+    public static final String RoadMapGenInfDigitalAsset = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[1]/div[2]/ul/li[2]/a";
+    public static final String RoadMapGenInfDigitalAssetME = "/html/body/div/div[1]/main/div/div/div/div/div[1]/h1";
     public static final String RoadMapAppOnespaceIOS = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[1]/ul/li[1]/a";
     public static final String RoadMapAppOneSpaceAndroid = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[1]/ul/li[2]/a";
     public static final String RoadMapAppOneSpaceWeb = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[1]/ul/li[3]/a";
-    public static final String RoadMapProvidingAnaliticPanel = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[2]/ul/li[1]/a";
+    public static final String RoadMapProvidingAnaliticPanel = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[2]/div[2]/ul/li[1]/a";
     public static final String RoadMapProvidingAnaliticPanelME = "/html/body/div/div[1]/main/div[1]/div/div/div/h1";
-    public static final String RoadMapProvidingBuildConsens = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[2]/ul/li[2]/a";
+    public static final String RoadMapProvidingBuildConsens = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[2]/div[2]/ul/li[2]/a";
     public static final String RoadMapProvidingBuildConsensME = "/html/body/div/div[1]/main/div/div/div/div/div[1]/p/b";
-    public static final String RoadMapProvidingBuildInfrastrucrur = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[2]/ul/li[3]/a";
+    public static final String RoadMapProvidingBuildInfrastrucrur = "/html/body/div/div[1]/div/div/div/div/div[1]/div[1]/div/div[2]/div[2]/ul/li[3]/a";
     public static final String RoadMapProvidingBuildInfrastrucrurME = "/html/body/div/div[1]/main/div/div/div/div/div[1]/div[1]/h1";
     public static final String RoadMapLoyInformPubContactPerformance = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[3]/ul/li[1]/a";
     public static final String RoadMapLoyInformPerformance = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[3]/ul/li[2]/a";
@@ -94,7 +96,19 @@ public class XpathRoadMap {
 
     //Links
     public static final String Business = "http://stg.bitbon.space/ru/cooperation/business";
-
+    public static final String BitUpAgent = "http://stg.bitbon.space/ru/cooperation/bitup-agency";
+    public static final String Operators = "http://stg.bitbon.space/ru/cooperation/bitbon-system-operators";
+    public static final String Developers = "http://stg.bitbon.space/ru/cooperation/developers";
+    public static final String Exchanges = "http://stg.bitbon.space/ru/cooperation/exchanges";
+    public static final String Lawyers = "http://stg.bitbon.space/ru/cooperation/lawyers";
+    public static final String Institutes = "http://stg.bitbon.space/ru/cooperation/institutes";
+    public static final String Forums = "http://stg.bitbon.space/ru/cooperation/forums-mass-media";
+    public static final String States = "http://stg.bitbon.space/ru/cooperation/states";
+    public static final String Blockchain = "http://stg.bitbon.space/ru/what-is-blockchain";
+    public static final String WhatsIsDigitalAssert = "http://stg.bitbon.space/ru/what-is-a-digital-asset";
+    public static final String AnaliticPanel = "http://stg.bitbon.space/ru/providing";
+    public static final String BuildConsens = "http://stg.bitbon.space/ru/consensus-building-using-the-community-pos-algorithm";
+    public static final String BuildInfrastrucrur = "http://stg.bitbon.space/ru/infrastructure-building-providing";
     public static final String RoadMapLinks = "Сотрудничество\n" +
             "Бизнесу\n" +
             "Bitup-Агентствам\n" +

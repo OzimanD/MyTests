@@ -107,6 +107,13 @@ public class XpathRoadMap {
     public static final String RoadMapCheckYears = "/html/body/div/div[1]/footer/section[4]/div/div/div/div";
 
 
+    /////
+    public static final String RoadMapClickX = "/html/body/div/div[1]/div/header/div/div[1]/div[2]/div[1]";
+    public static final String HeaderStrings = "/html/body/div/div[1]/div/header/div/div[1]/div[1]/nav/ul";
+    public static final String LanguagesDrop = "/html/body/div/div[1]/div/div/div/div/div[2]/div/div/div/div/div/span[2]/span[2]";
+    public static final String LanguagesGetText = "/html/body/div/div[1]/div/div/div/div/div[3]/div/div/div/ul";
+
+
     //Links
     public static final String Business = "http://stg.bitbon.space/ru/cooperation/business";
     public static final String BitUpAgent = "http://stg.bitbon.space/ru/cooperation/bitup-agency";
@@ -206,4 +213,14 @@ public class XpathRoadMap {
             "Помощь Провайдеру\n" +
             "Брендовые материалы\n" +
             "Русский";
+    public static final String InfoHeader = "Главная\n" +
+            "Новости\n" +
+            "О Системе Bitbon\n" +
+            "Провайдинг\n" +
+            "Аудит и статистика\n" +
+            "Сотрудничество";
+
+    public static final String txtFactLanguageBoard = "English\n" +
+            "Русский\n" +
+            "Українська";
 }

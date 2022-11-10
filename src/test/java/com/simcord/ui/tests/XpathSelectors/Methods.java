@@ -36,9 +36,39 @@ public class Methods {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(selector)));
     }
 
-    public static void Scrol(String scroll) {
-        ((JavascriptExecutor) driver).executeScript(scroll);
+    public static void Scroll500() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,500)");
+        Thread.sleep(1000);
+    }
 
+    public static void Scroll1000() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,1000)");
+        Thread.sleep(1000);
+    }
+
+    public static void Scroll1500() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,1500)");
+        Thread.sleep(1000);
+    }
+
+    public static void Scroll2000() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,2000)");
+        Thread.sleep(1000);
+    }
+
+    public static void Scroll2500() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,2500)");
+        Thread.sleep(1000);
+    }
+
+    public static void Scroll3000() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,3000)");
+        Thread.sleep(1000);
+    }
+
+    public static void Scroll4000() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("scroll(0,4000)");
+        Thread.sleep(1000);
     }
 
     public static void WaitLoadPage() throws InterruptedException {

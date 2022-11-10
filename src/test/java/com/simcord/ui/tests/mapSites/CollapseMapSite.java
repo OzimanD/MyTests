@@ -1,18 +1,17 @@
 package com.simcord.ui.tests.mapSites;
 
 import com.simcord.ui.tests.XpathSelectors.Methods;
-import com.simcord.ui.tests.XpathSelectors.XpathFutter;
 import com.simcord.ui.tests.XpathSelectors.XpathRoadMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static com.simcord.ui.tests.XpathSelectors.XpathFutter.Years;
+import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.InfoHeader;
 import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.RoadMapLinks;
 
-public class MapsitesIcon extends Methods {
-    //	C236431	Нажатие на иконку карты сайта -> отобразить карту сайта согласно дизайна
+public class CollapseMapSite extends Methods {
+    //C236433	Нажатие на "крестик" -> свернуть карту сайта
 
     public static void ClickIconMapSites() throws InterruptedException {
         WebElement element = driver.findElement(By.xpath(XpathRoadMap.RoadMapButton));
@@ -27,10 +26,27 @@ public class MapsitesIcon extends Methods {
         Assert.assertEquals(txtGetText, RoadMapLinks, "C236431");
     }
 
+    public static void ClickCollapse() throws InterruptedException {
+        WebElement element = driver.findElement(By.xpath(XpathRoadMap.RoadMapClickX));
+        element.click();
+        Thread.sleep(1000);
+    }
+
+//    public static void CheckCollapse() {
+//
+//    }
+
+    public static void ResultCollapse() {
+        WebElement element = driver.findElement(By.xpath(XpathRoadMap.HeaderStrings));
+        String txtGetText = element.getText();
+        Assert.assertEquals(txtGetText, InfoHeader, "C236431");
+    }
+
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
         ClickIconMapSites();
         Result();
-
+        ClickCollapse();
+        ResultCollapse();
     }
 }

@@ -1,0 +1,6 @@
+Создать Space ID ( неактуально, BSW-792)
+		ID	Title
+		C235466	Нажатие на "Учётная запись" -> открывается страница "Учётная запись"
+		C257361	Нажатие на гиперссылку https://www.bit.trade/ru/registration -> переход на страницу регистрации bit.trade *
+ Add Test Case |  Add Subsection
+

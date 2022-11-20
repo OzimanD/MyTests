@@ -32,6 +32,11 @@ public class B8PhylBitBonPrincipals extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
+        // TODO: Тест падает на шаге ниже, посмотреть, что не так
+        //  Ошибка: org.openqa.selenium.TimeoutException:
+        //  Expected condition failed: waiting for presence of element located by:
+        //  By.xpath: /html/body/div/div[1]/main/div/section/div[4]/div[1]/div/h1
+        //  (tried for 10 second(s) with 500 milliseconds interval)
         PhilosophyPrincipals();
         Result();
 

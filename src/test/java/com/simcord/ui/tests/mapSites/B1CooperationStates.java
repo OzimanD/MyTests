@@ -12,7 +12,7 @@ import static com.simcord.ui.tests.XpathSelectors.XpathRoadMap.States;
 
 public class B1CooperationStates extends Methods {
     //C236432	Нажатие на каждую гиперссылку -> отображение статьи в основной рабочей области страницы
-    public static String GetLink;
+    public static String GetLink; // TODO: А это зачем, если оно не используется?
 
     public static String States() throws InterruptedException {
         ClickIconMapSites();

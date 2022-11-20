@@ -46,13 +46,13 @@ public class T1_4MainPage extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll500();
+        scroll(500);
         Check1();
-        Scroll1000();
+        scroll(1000);
         Check2();
-        Scroll1500();
+        scroll(1500);
         Check3();
-        Scroll2000();
+        scroll(2000);
         Check4();
 
     }

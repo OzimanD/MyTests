@@ -102,6 +102,11 @@ public class ClickLincksSystemBitBon extends Methods {
     public static void Check() throws InterruptedException {
         BitBonNews();
         BonEconomic();
+        // TODO: Тест падает на шаге ниже, посмотреть, что не так
+        //  Ошибка: org.openqa.selenium.TimeoutException:
+        //  Expected condition failed: waiting for presence of element located by:
+        //  By.xpath: /html/body/div/div[1]/main/section/h1
+        //  (tried for 10 second(s) with 500 milliseconds interval)
         BonTechnology();
         BuyBitBon();
         ServiceBonpay();

@@ -35,6 +35,7 @@
             <version>2.19.0</version>
         </dependency>
 
+        <!-- TODO: зачем добавлять два логгера и не использовать ни один? -->
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

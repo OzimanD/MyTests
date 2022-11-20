@@ -31,10 +31,10 @@ public class MobileAppOpenAndroid extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll1500();
+        scroll(1500);
         GoToMobileApp();
         Check1();
-        Scroll2000();
+        scroll(2000);
         WaitLoadPage();
     }
 }

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import java.time.Duration;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 
@@ -21,54 +21,31 @@ public class Methods {
     @BeforeClass
     public static void Connect() {
         try {
-
             ChromeOptions options = new ChromeOptions();
-            driver = new ChromeDriver(options);
-            driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            if (Objects.isNull(driver)) {
+                driver = new ChromeDriver(options);
+                driver.manage().window().maximize();
+                driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            }
             driver.get("http://stg.bitbon.space/ru");
         } catch (Exception e) {
         }
     }
 
     public static void waitUntil(String selector) {
-        WebElement element = (new WebDriverWait(driver, java.time.Duration.ofSeconds(10)))
+        new WebDriverWait(driver, java.time.Duration.ofSeconds(10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(selector)));
     }
 
-    public static void Scroll500() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,500)");
+
+    // TODO: Не особо уловил, в чём был смысл городить одинаковые методы, если можно было сделать так
+    public static void scroll(int x, int y) throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript(String.format("scroll(%d,%d)", x, y));
         Thread.sleep(1000);
     }
 
-    public static void Scroll1000() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,1000)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll1500() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,1500)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll2000() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,2000)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll2500() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,2500)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll3000() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,3000)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll4000() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,4000)");
-        Thread.sleep(1000);
+    public static void scroll(int y) throws InterruptedException {
+        scroll(0, y);
     }
 
     public static void WaitLoadPage() throws InterruptedException {

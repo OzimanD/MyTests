@@ -25,7 +25,7 @@ public class T6MainPageBusiness extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll500();
+        scroll(500);
         Check1();
     }
 }

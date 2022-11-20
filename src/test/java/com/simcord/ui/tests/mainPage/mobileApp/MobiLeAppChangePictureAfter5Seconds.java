@@ -41,13 +41,19 @@ public class MobiLeAppChangePictureAfter5Seconds extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll1500();
+        scroll(1500);
         GoToOneMobileApp();
-        Scroll1000();
+        scroll(1000);
         Check1();
         WaitLoadPage();
         Check2();
         Thread.sleep(5000);
+        // TODO: Тест падает на шаге ниже, посмотреть, что не так
+        //  java.lang.AssertionError: C235327
+        //  Expected :_3_Sjq _3empz
+        //  Actual   :_3_Sjq
+        //  P.S: Проверять сгенерированное имя класса - плохая идея, достаточно убедиться,
+        //  что класс изменился спустя 5 секунд ожидания (сохранить предыдущее значение сгенерированного класса)
         Check3();
     }
 }

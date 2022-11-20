@@ -35,7 +35,7 @@ public class T9MainPageNewsCheckMoveRight extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll2000();
+        scroll(2000);
         Check1();
         Check2();
     }

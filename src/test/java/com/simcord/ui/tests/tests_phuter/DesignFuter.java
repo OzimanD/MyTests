@@ -37,8 +37,9 @@ public class DesignFuter extends Methods {
 
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void closeBrowser() {
-        driver.quit();
-    }
+//    Уже наследован
+//    @AfterMethod(alwaysRun = true)
+//    public void closeBrowser() {
+//        driver.quit();
+//    }
 }

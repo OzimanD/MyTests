@@ -38,9 +38,9 @@ public class OneSpaceCommunityClickOnRoadMap extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(500);
+        Scroll500();
         GoToOneSpaceComuniy();
-        scroll(4000);
+        Scroll4000();
         GoToOneSpaceRoadmap();
         Check1();
     }

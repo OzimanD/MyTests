@@ -65,9 +65,9 @@ public class MobileAppClicksIconApp extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(1500);
+        Scroll1500();
         GoToOneMobileApp();
-        scroll(1000);
+        Scroll1000();
         Check1();
         WaitLoadPage();
         Check2();

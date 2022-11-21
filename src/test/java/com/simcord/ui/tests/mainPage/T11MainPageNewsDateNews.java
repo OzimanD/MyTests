@@ -42,7 +42,7 @@ public class T11MainPageNewsDateNews extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(2000);
+        Scroll2000();
         Check1();
         Check2();
         Check3();

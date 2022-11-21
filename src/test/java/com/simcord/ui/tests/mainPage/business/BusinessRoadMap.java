@@ -39,7 +39,7 @@ public class BusinessRoadMap extends Methods {
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
         GoToOneSpaceComuniy();
-        scroll(500);
+        Scroll500();
         GoToOneSpaceRoadmap();
         Check1();
     }

@@ -28,6 +28,7 @@ public class BuildingConsensusClickOnLincSimcord extends Methods {
         WebElement element = driver.findElement(By.xpath(BuildConsensLinkSimcord));
         element.click();
         GoToNewTabBrowser();
+        StopLoadPaige();
         String GetLink = driver.getCurrentUrl();
         System.out.println(driver.getCurrentUrl());
         Assert.assertEquals(GetLink, LinkSimcord, "C257395");

@@ -36,14 +36,14 @@ public class MobiLeAppChangePictureAfter5Seconds extends Methods {
         WebElement picture = driver.findElement(By.xpath(MobileAppPicture2Active));
         String txtGetText = picture.getAttribute("class");
 //        System.out.println(txtGetText);
-        Assert.assertEquals(txtGetText, "_3_Sjq _3empz", "C235327");
+        Assert.assertEquals(txtGetText, "_3_Sjq", "C235327");
     }
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(1500);
+        Scroll1500();
         GoToOneMobileApp();
-        scroll(1000);
+        Scroll1000();
         Check1();
         WaitLoadPage();
         Check2();

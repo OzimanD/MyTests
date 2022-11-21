@@ -66,16 +66,16 @@ public class OneSpaceCommunityAnimations extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(500);
+        Scroll2000();
         GoToOneSpaceComuniy();
         Check1();
-        scroll(1000);
+        Scroll1000();
         Check2();
-        scroll(1500);
+        Scroll1500();
         Check3();
-        scroll(3000);
+        Scroll3000();
         Check4();
-        scroll(4000);
+        Scroll4000();
         Check5();
 
     }

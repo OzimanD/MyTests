@@ -25,7 +25,7 @@ public class T8MobileApp extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(1500);
+        Scroll1500();
         Check1();
     }
 }

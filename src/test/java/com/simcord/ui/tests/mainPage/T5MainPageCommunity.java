@@ -25,7 +25,7 @@ public class T5MainPageCommunity extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        scroll(500);
+        Scroll500();
         Check1();
     }
 }

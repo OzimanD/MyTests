@@ -25,7 +25,7 @@ public class Methods {
             ChromeOptions options = new ChromeOptions();
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
             driver.get("http://stg.bitbon.space/ru");
         } catch (Exception e) {
         }
@@ -112,6 +112,18 @@ public class Methods {
         element.click();
         Thread.sleep(1000);
     }
+
+    public static void CloseNewWindowBrowser() {
+        driver.close();
+    }
+
+    public static void GoToNewTabBrowser() {
+        for (String tab : driver.getWindowHandles()) {
+            driver.switchTo().window(tab);
+        }
+//        System.out.println(driver.getCurrentUrl());
+    }
+
 
     @AfterClass(alwaysRun = true)
     public void closeBrowser() {

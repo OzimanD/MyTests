@@ -2,6 +2,10 @@ package com.simcord.ui.tests.XpathSelectors;
 
 public class XpathMainPage {
 
+
+    public static final String RoadMapProvidingBuildConsens = "/html/body/div/div[1]/footer/section[2]/div/div[1]/div/div[2]/div[2]/ul/li[2]/a";
+    public static final String BuildConsensLinkSimcord = "/html/body/div/div[1]/main/div/div/div/div/p[4]/a";
+
     public static final String HM = "/html/body/div/div[1]/div";
     public static final String HeaderMain = "/html/body/div/div[1]/div/header/div/div[1]/div[1]/nav/ul/li[1]/a";
     public static final String HeaderMainB = "/html/body/div/div[1]/div/header/div/div[1]/div[1]/nav/ul/li[1]/a";
@@ -27,11 +31,8 @@ public class XpathMainPage {
 
 
     public static final String Futter1 = "/html/body/div/div[1]/footer/section[1]/div/div/div";
-
     public static final String Futter2 = "/html/body/div/div[1]/footer/section[2]/div/div[1]";
-
     public static final String Futter3 = "/html/body/div/div[1]/footer/section[3]/div[1]/div/div";
-
     public static final String Futter4 = "/html/body/div/div[1]/footer/section[4]/div/div";
     public static final String CommunityBox = "/html/body/div/div[1]/main/div/div/section[2]/div/div[1]/div/div/a/div[2]";
     public static final String CommunityRoadMap = "/html/body/div/div[1]/main/div/div/section[5]/div/div/div/p/a";
@@ -145,6 +146,14 @@ public class XpathMainPage {
     public static final String HelpsProviderBlock10 = "/html/body/div/div[1]/main/div/div[2]/div/div/section[2]/div";
     public static final String HelpsProviderPreMenu = "/html/body/div/div[1]/main/div/div[1]/div/div[2]/div[1]/div/a";
     public static final String HelpsProviderPDF1 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[2]/li[1]/a";
+    public static final String HelpsProviderPDF2 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[2]/li[2]/a";
+    public static final String HelpsProviderPDF3 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[3]/li[1]/a";
+    public static final String HelpsProviderPDF4 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[3]/li[2]/a";
+    public static final String HelpsProviderPDF5 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[4]/li[1]/a";
+    public static final String HelpsProviderPDF6 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[4]/li[2]/a";
+    public static final String HelpsProviderPDF7 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[5]/li[1]/a";
+    public static final String HelpsProviderPDF8 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[5]/li[2]/a";
+    public static final String HelpsProviderPDF9 = "/html/body/div/div[1]/main/div[2]/div/section[1]/div/ul[6]/li/a";
 
     public static final String Futter1Text = "Мы изначально заложили в правовую природу Социальной сети «Система Bitbon» адаптивное законодательное регулирование, являющееся важным показателем ценности в условиях развития глобальной информационной экономики. Вся деятельность Участников Системы Bitbon происходит исключительно в правовой плоскости, что обеспечивает законность всех процессов. Соблюдение современных международных стандартов также позволяет нам достигнуть гарантированной абсолютной прозрачности в новой прогрессивной форме социально-экономических взаимоотношений всего мирового сообщества.\n" +
             "Simcord LLC. Technologies. Ukraine. (Company ID code 37657823). ООО «Симкорд», согласно Положению 1 Публичного контракта Системы Bitbon, выполняет функции первого Оператора Системы Bitbon. Компания соответствует международным стандартам менеджмента качества, что подтверждается наличием сертификата ISO 9001:2015 в сфере научно-исследовательской деятельности в области разработки и производства высоконагруженных программных решений на базе технологии распределенного реестра.\n" +

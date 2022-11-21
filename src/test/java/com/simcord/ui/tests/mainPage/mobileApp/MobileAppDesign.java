@@ -30,7 +30,7 @@ public class MobileAppDesign extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll1500();
+        scroll(1500);
         GoToMobileApp();
         Check1();
     }

@@ -61,15 +61,15 @@ public class BusinessDesign extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll500();
+        scroll(500);
         GoToOneSpaceBusiness();
         Check1();
-        Scroll1000();
+        scroll(1000);
         Check2();
-        Scroll1500();
+        scroll(1500);
         Check3();
         Check4();
-        Scroll2500();
+        scroll(2500);
         Check5();
 
     }

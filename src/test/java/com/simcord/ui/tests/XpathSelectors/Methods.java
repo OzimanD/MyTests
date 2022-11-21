@@ -25,28 +25,15 @@ public class Methods {
             ChromeOptions options = new ChromeOptions();
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
             driver.get("http://stg.bitbon.space/ru");
         } catch (Exception e) {
-        }
-    }
-
-    public static void StopLoadPaige() {
-        try {
-            driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
-        } catch (Exception e) {
-            System.out.println("Page not load");
         }
     }
 
     public static void waitUntil(String selector) {
         WebElement element = (new WebDriverWait(driver, java.time.Duration.ofSeconds(10)))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(selector)));
-    }
-
-    public static void Scroll0() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,0)");
-        Thread.sleep(1000);
     }
 
     public static void Scroll500() throws InterruptedException {
@@ -79,23 +66,8 @@ public class Methods {
         Thread.sleep(1000);
     }
 
-    public static void Scroll3500() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,3500)");
-        Thread.sleep(1000);
-    }
-
     public static void Scroll4000() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("scroll(0,4000)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll5000() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,5000)");
-        Thread.sleep(1000);
-    }
-
-    public static void Scroll5500() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("scroll(0,5500)");
         Thread.sleep(1000);
     }
 
@@ -112,18 +84,6 @@ public class Methods {
         element.click();
         Thread.sleep(1000);
     }
-
-    public static void CloseNewWindowBrowser() {
-        driver.close();
-    }
-
-    public static void GoToNewTabBrowser() {
-        for (String tab : driver.getWindowHandles()) {
-            driver.switchTo().window(tab);
-        }
-//        System.out.println(driver.getCurrentUrl());
-    }
-
 
     @AfterClass(alwaysRun = true)
     public void closeBrowser() {

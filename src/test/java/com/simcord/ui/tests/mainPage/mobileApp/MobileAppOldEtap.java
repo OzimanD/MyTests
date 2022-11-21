@@ -35,9 +35,9 @@ public class MobileAppOldEtap extends Methods {
 
     @Test(description = "Tests of Futter")
     public static void Check() throws InterruptedException {
-        Scroll1500();
+        scroll(1500);
         GoToOneMobileApp();
-        Scroll1000();
+        scroll(1000);
         WaitLoadPage();
         Check1();
         Check2();

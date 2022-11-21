@@ -39,6 +39,7 @@ public class Methods {
         }
     }
 
+
     public static void waitUntil(String selector) {
         WebElement element = (new WebDriverWait(driver, java.time.Duration.ofSeconds(10)))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(selector)));
